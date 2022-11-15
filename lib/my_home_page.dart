@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:navigation_flutter/screens/details_screens.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
@@ -42,6 +43,9 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headline4,
             ),
+            ElevatedButton(onPressed: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context) => DetailsScreen(_counter)));
+            }, child: Text("Go to details screen"))
           ],
         ),
       ),

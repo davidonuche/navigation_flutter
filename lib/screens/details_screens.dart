@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
 
 class DetailsScreen extends StatelessWidget {
-  const DetailsScreen({super.key});
+  int counter;
+  DetailsScreen(this.counter);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      body: Center(child: Text("$counter"),),
+      body: Center(
+        child: Text("$counter"),
+      ),
     );
   }
 }
