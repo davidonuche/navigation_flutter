@@ -45,7 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             ElevatedButton(onPressed: (){
               Navigator.push(context, MaterialPageRoute(builder: (context) => DetailsScreen(_counter)));
-            }, child: Text("Go to details screen"))
+            }, child: const Text("Go to details screen"))
           ],
         ),
       ),
